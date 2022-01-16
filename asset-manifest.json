@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/KW0409-blog/static/css/main.c35ccadf.css",
+    "main.js": "/KW0409-blog/static/js/main.f7d915a8.js",
+    "index.html": "/KW0409-blog/index.html",
+    "main.c35ccadf.css.map": "/KW0409-blog/static/css/main.c35ccadf.css.map",
+    "main.f7d915a8.js.map": "/KW0409-blog/static/js/main.f7d915a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c35ccadf.css",
+    "static/js/main.f7d915a8.js"
+  ]
+}
