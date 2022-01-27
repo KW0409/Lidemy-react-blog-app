@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Lidemy-react-blog-app/static/css/main.c35ccadf.css",
-    "main.js": "/Lidemy-react-blog-app/static/js/main.4b898fdb.js",
+    "main.js": "/Lidemy-react-blog-app/static/js/main.3600a291.js",
     "index.html": "/Lidemy-react-blog-app/index.html",
     "main.c35ccadf.css.map": "/Lidemy-react-blog-app/static/css/main.c35ccadf.css.map",
-    "main.4b898fdb.js.map": "/Lidemy-react-blog-app/static/js/main.4b898fdb.js.map"
+    "main.3600a291.js.map": "/Lidemy-react-blog-app/static/js/main.3600a291.js.map"
   },
   "entrypoints": [
     "static/css/main.c35ccadf.css",
-    "static/js/main.4b898fdb.js"
+    "static/js/main.3600a291.js"
   ]
 }
