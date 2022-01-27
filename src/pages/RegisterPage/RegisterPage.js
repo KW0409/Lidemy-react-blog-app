@@ -7,10 +7,11 @@ import { setUserAuthToken } from "../../utils";
 import useSubmit from "../../customHooks/useSubmit";
 
 const Root = styled.div`
+  padding: 50px 0;
+  min-height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 `;
 
 const RegisterForm = styled.form`

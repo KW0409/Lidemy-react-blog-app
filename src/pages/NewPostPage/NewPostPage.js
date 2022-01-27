@@ -2,20 +2,19 @@ import { useRef } from "react";
 import styled from "styled-components";
 
 import { postArticle } from "../../WebAPI";
-import { findEmptyInput } from "../../utils";
 import useSubmit from "../../customHooks/useSubmit";
 
 const Root = styled.div`
-  padding-top: 50px;
+  padding: 50px 0;
+  min-height: calc(100vh - 64px);
   display: flex;
   justify-content: center;
-  height: 100%;
+  align-items: center;
 `;
 
 const NewPostForm = styled.form`
-  width: 750px;
-  height: 900px;
   padding: 28px 24px;
+  width: 750px;
   background: #fffffb;
   color: rgba(152, 152, 152, 1);
   border: 1px solid rgba(180, 180, 180, 0.3);
@@ -28,6 +27,13 @@ const NewPostTitle = styled.div`
   margin-bottom: 20px;
   font-size: 30px;
   text-align: center;
+`;
+
+const ErrorMsg = styled.p`
+  color: red;
+  font-size: 18px;
+  text-align: center;
+  white-space: pre-line;
 `;
 
 const NewPostContent = styled.div`
@@ -67,10 +73,6 @@ const NewPostContent = styled.div`
   }
 `;
 
-const TitleInput = styled.input``;
-
-const ContentTextarea = styled.textarea``;
-
 const NewPostSubmit = styled.div`
   padding-top: 35px;
   text-align: center;
@@ -94,13 +96,6 @@ const NewPostSubmit = styled.div`
   button:active {
     transform: scale(0.9);
   }
-`;
-
-const ErrorMsg = styled.p`
-  color: red;
-  font-size: 18px;
-  text-align: center;
-  white-space: pre-line;
 `;
 
 export default function NewPostPage() {
@@ -143,11 +138,11 @@ export default function NewPostPage() {
             {errorMessage && <ErrorMsg>{errorMessage}</ErrorMsg>}
             <NewPostContent>
               <span>文章標題: </span>
-              <TitleInput ref={titleInputRef} />
+              <input ref={titleInputRef} />
             </NewPostContent>
             <NewPostContent>
               <span>文章內容:</span>
-              <ContentTextarea ref={contentTextareaRef}></ContentTextarea>
+              <textarea ref={contentTextareaRef}></textarea>
             </NewPostContent>
             <NewPostSubmit>
               <button>確認發佈</button>
